@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import net.codejava.customer.Customer;
 import net.codejava.customer.entity.Account;
 import net.codejava.customer.service.AccountService;
 

@@ -16,10 +16,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import net.codejava.customer.Customer;
 import net.codejava.customer.entity.Account;
 import net.codejava.customer.entity.Category;
-import net.codejava.customer.service.AccountService;
 import net.codejava.customer.service.CategoryService;
 
 //@Controller(value = "categoryControllerOfAdmin")
@@ -31,6 +29,7 @@ public class CategoryController {
 	
 	@RequestMapping("/manager/category")
 	public ModelAndView home() {
+
 		List<Category> listCategory = categoryService.listAll();
 		ModelAndView mav = new ModelAndView("admin/category");
 		mav.addObject("listCategory", listCategory);

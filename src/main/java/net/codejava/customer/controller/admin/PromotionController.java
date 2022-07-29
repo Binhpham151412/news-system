@@ -1,17 +1,8 @@
 package net.codejava.customer.controller.admin;
 
-import java.io.File;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
+import net.codejava.customer.entity.Account;
+import net.codejava.customer.entity.Promotion;
+import net.codejava.customer.service.PromotionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -21,15 +12,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
-import net.codejava.customer.Customer;
-import net.codejava.customer.entity.Account;
-import net.codejava.customer.entity.Article;
-import net.codejava.customer.entity.Category;
-import net.codejava.customer.entity.Promotion;
-import net.codejava.customer.service.AccountService;
-import net.codejava.customer.service.ArticleService;
-import net.codejava.customer.service.CategoryService;
-import net.codejava.customer.service.PromotionService;
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 //@Controller(value = "articleControllerOfAdmin")
 @Controller

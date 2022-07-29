@@ -13,7 +13,8 @@ import net.codejava.customer.repository.CategoryRepository;
 @Transactional
 public class CategoryService {
 
-	@Autowired CategoryRepository repo;
+	@Autowired
+	CategoryRepository repo;
 	
 	public void save(Category category) {
 		repo.save(category);

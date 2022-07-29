@@ -1,15 +1,12 @@
 package net.codejava.customer.service;
 
-import java.util.List;
-
+import net.codejava.customer.entity.Promotion;
+import net.codejava.customer.repository.PromotionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import net.codejava.customer.entity.Article;
-import net.codejava.customer.entity.Promotion;
-import net.codejava.customer.repository.ArticleRepository;
-import net.codejava.customer.repository.PromotionRepository;
+import java.util.List;
 
 @Service
 @Transactional
